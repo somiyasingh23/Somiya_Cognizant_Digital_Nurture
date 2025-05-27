@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Community Event Portal</title>
+
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="step8-styles.css" />
+</head>
+<body>
+  <header id="mainHeader">
+    Local Community Event Portal
+  </header>
+
+  <!-- Navigation menu -->
+  <nav>
+    <ul class="navMenu">
+      <li><a href="#yoga">Yoga</a></li>
+      <li><a href="#cleanup">Cleanup</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="eventCard" id="yoga">
+    <h2>Community Yoga Session</h2>
+    <p class="description">
+      Join us every Saturday morning for a relaxing community yoga session in the park.
+    </p>
+    <button class="joinBtn">Join Event</button>
+  </div>
+
+  <div class="eventCard" id="cleanup">
+    <h2>Neighborhood Cleanup</h2>
+    <p class="description">
+      Help keep our community clean and green! Meet at the community center every first Sunday of the month.
+    </p>
+    <button class="joinBtn">Join Event</button>
+  </div>
+
+  <!-- Step 7: Table -->
+  <table class="eventTable">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Community Yoga Session</td>
+        <td>Every Saturday</td>
+        <td>Central Park</td>
+      </tr>
+      <tr>
+        <td>Neighborhood Cleanup</td>
+        <td>First Sunday of Month</td>
+        <td>Community Center</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Step 8: Contact Form to demo outline on focus -->
+  <section id="contact" class="contactSection">
+    <h2>Contact Us</h2>
+    <form class="contactForm" action="#" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" placeholder="Your full name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" placeholder="you@example.com" required /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea><br />
+
+      <button type="submit" class="joinBtn">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>

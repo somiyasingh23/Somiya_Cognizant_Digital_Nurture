@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Community Event Portal</title>
+
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="step9-styles.css" />
+</head>
+<body>
+  <header id="mainHeader">
+    Local Community Event Portal
+  </header>
+
+  <!-- Navigation menu -->
+  <nav>
+    <ul class="navMenu">
+      <li><a href="#yoga">Yoga</a></li>
+      <li><a href="#cleanup">Cleanup</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="eventCard" id="yoga">
+    <h2>Community Yoga Session</h2>
+    <p class="description">
+      Join us every Saturday morning for a relaxing community yoga session in the park.
+    </p>
+    <button class="joinBtn">Join Event</button>
+  </div>
+
+  <div class="eventCard" id="cleanup">
+    <h2>Neighborhood Cleanup</h2>
+    <p class="description">
+      Help keep our community clean and green! Meet at the community center every first Sunday of the month.
+    </p>
+    <button class="joinBtn">Join Event</button>
+  </div>
+
+  <!-- Step 8: Form with outline for focus demo -->
+  <form id="contact" class="contactForm" action="#" method="post">
+    <h2>Contact Us</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+    <button type="submit" class="joinBtn">Send</button>
+  </form>
+
+  <!-- Step 9: News Article with multi-columns -->
+  <section class="newsArticle">
+    <h2>Community Bulletin</h2>
+    <p>This week in Gokuldham Society was nothing short of spectacular! On Monday, Popatlal surprised everyone by announcing his latest matchmaking horoscope reading — spoiler alert: still no good news. Meanwhile, Jethalal’s TV showroom is finally up and running again after that epic power outage. Thanks to Sodhi's jugaad skills, electricity was restored in record time!</p>
+    <p>Wednesday’s rainstorm brought an impromptu antakshari night in the clubhouse. From Iyer's unbeatable old classics to Daya Bhabhi’s energetic "garba style" songs, the evening was a melody of madness and memories. Tarak Mehta, as usual, played peacekeeper during the soft clash between Jethalal and Babita Ji about "volume settings".</p>
+    <p>Upcoming Events: Don’t miss this Sunday’s *Seva Diwas*, where residents will join hands for a neighborhood clean-up. Later in the evening, there will be a special screening of "Sholay" on the clubhouse projector followed by free soda and samosas courtesy of Abdul!</p>
+    <p>In health news, Dr. Haathi recommends everyone to increase their immunity with homemade kadha — recipe available on the society notice board. Tapu Sena, meanwhile, has announced a secret mission to stop Bhide from enforcing early night curfews — more updates soon!</p>
+  </section>
+</body>
+</html>
