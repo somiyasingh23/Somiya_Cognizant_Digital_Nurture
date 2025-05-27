@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Promo Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f2f2f2;
+      border-radius: 8px;
+    }
+    video {
+      width: 100%;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+    #videoStatus {
+      margin-top: 10px;
+      color: green;
+      font-weight: bold;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>You're Invited to Our Community Event!</h2>
+
+  
+  <video id="promoVideo" controls oncanplay="videoReadyMessage()">
+    <source src="video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div id="videoStatus"></div>
+
+ 
+  <form id="interestForm">
+    <h3>Let us know you're coming:</h3>
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="message" placeholder="Any message or question?" rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    /
+    function videoReadyMessage() {
+      document.getElementById("videoStatus").textContent = "🎉 Video ready to play!";
+    }
+
+    
+    let formSubmitted = false;
+
+    document.getElementById("interestForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Form submitted! Thank you.");
+      formSubmitted = true;
+    });
+
+    window.onbeforeunload = function () {
+      if (!formSubmitted) {
+        return "You have unsaved changes. Are you sure you want to leave?";
+      }
+    };
+  </script>
+
+</body>
+</html>
